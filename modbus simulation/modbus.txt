@@ -1,0 +1,50 @@
+# 🏁 How to Run This OT Modbus Simulation Lab
+
+This guide walks you through setting up and running your Modbus TCP server and client using Python. It’s a safe, offline lab designed for OT security practice.
+
+## 🧰 Prerequisites
+
+- ✅ Python 3 installed
+- ✅ Kali Linux (or any Linux distro)
+- ✅ `pymodbus` library installed 
+- ✅ Wireshark for network analysis
+- ✅ Terminal skills 
+
+---
+
+## 🔧 Step-by-Step Instructions
+
+### 1. 📁 Create a project folder
+
+mkdir -p ~/ics-traffic-lab
+cd ~/ics-traffic-lab
+
+
+2. Set up python virtual environment 
+#python3 -m venv venv
+#source venv/bin/activate
+
+3. install pymodus
+#pip install "pymodbus<3.0"
+
+4. Use the modbus client and server python scripts.
+5. start the modbus server
+#source venv/bin/activate
+#python modbus_server.py
+
+6. in a new terminal, run the modbus client
+cd ~/ics-traffic-lab
+source venv/bin/activate
+python modbus_client.py
+ --> you should see output as per the pic.
+
+--> wireshark capture 
+Start Wireshark, select the lo (loopback) interface
+ and use this display filter: tcp.port == 5020
+
+You have:
+- Simulated Modbus traffic
+- Sent commands to a virtual OT device
+- Viewed OT protocol traffic in Wireshark
+
+
