@@ -1,1 +1,1 @@
-Series of scenarios to simulate real-world adversary behavior.
+Series of scenarios include identifying an alert, hypothesis formulation then result.
