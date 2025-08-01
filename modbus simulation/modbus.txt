@@ -27,9 +27,10 @@ cd ~/ics-traffic-lab
 3. install pymodus
 #pip install "pymodbus<3.0"
 
-4. Use the modbus client and server python scripts.
-5. start the modbus server
+4. set a virtual environmentt
 #source venv/bin/activate
+
+5. Use the modbus client and server python scripts.
 #python modbus_server.py
 
 6. in a new terminal, run the modbus client
