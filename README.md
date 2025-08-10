@@ -1,1 +1,1 @@
-Series of scenarios include identifying an alert, hypothesis formulation then result.
+Series of scenarios include identifying and understanding the environment, the evidence, hypothesis and result.
